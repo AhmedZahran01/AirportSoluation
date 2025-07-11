@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Airport Parameters-->
+<Airport>
+	<AirportName>CAIRO INTL</AirportName>
+	<AirportICAOIdentifier>HECA</AirportICAOIdentifier>
+	<AirportMilICAOIdentifier></AirportMilICAOIdentifier>
+	<AirportIATADesignator>CAI</AirportIATADesignator>
+	<TMAName>CAIRO TMA</TMAName>
+	<CivilMilitaryPrivate>67</CivilMilitaryPrivate>
+	<MagneticTrueIndicator>77</MagneticTrueIndicator>
+	<MagneticVariation>4.000000</MagneticVariation>
+	<ActiveFlag>FALSE</ActiveFlag>
+	<AirportReferencePoint>N30064100 E031245000 142.341600</AirportReferencePoint>
+	<AltitudeFor3DVisualization>-1.000000</AltitudeFor3DVisualization>
+	<Type>2</Type>
+	<RunwayTaxiWeight>1.500000</RunwayTaxiWeight>
+	<TaxiSpeedApron>-1.000000</TaxiSpeedApron>
+	<TaxiSpeedTWY>-1.000000</TaxiSpeedTWY>
+	<TaxiSpeedRunway>-1.000000</TaxiSpeedRunway>
+	<CalcRouteByMinTime>FALSE</CalcRouteByMinTime>
+	<AbleToChangeSIDWithProbeRoute>TRUE</AbleToChangeSIDWithProbeRoute>
+	<AbleToChangeSTARAppWithProbeRoute>TRUE</AbleToChangeSTARAppWithProbeRoute>
+	
+	<RunWays>
+		<!--Runways Parameters-->
+		<RW>
+			<RWName>RW05C</RWName>
+			<Status>2</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30055888 E031235364 116.434000</ThresholdCoordinates>
+			<LandingCourse>49.175170</LandingCourse>
+			<RWLength>3998</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N30073050 E031255560 142.341600</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N30060270 E031240510 131.064000</GlideCoordinates>
+				<GlideSlopeAngle>3.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6.378140</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+		<RW>
+			<RWName>RW05L</RWName>
+			<Status>2</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30071103 E031224888 57.912000</ThresholdCoordinates>
+			<LandingCourse>49.429180</LandingCourse>
+			<RWLength>3300</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N00000000 E000000000 -6378137.000000</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N00000000 E000000000 -6378137.000000</GlideCoordinates>
+				<GlideSlopeAngle>0.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6378137.000000</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+		<RW>
+			<RWName>RW05R</RWName>
+			<Status>1</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30054978 E031250865 136.550400</ThresholdCoordinates>
+			<LandingCourse>49.189265</LandingCourse>
+			<RWLength>3999</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N30072200 E031271150 142.341600</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N30055410 E031252210 151.485600</GlideCoordinates>
+				<GlideSlopeAngle>3.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6378137.000000</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+		<RW>
+			<RWName>RW23C</RWName>
+			<Status>0</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30072377 E031254669 114.300000</ThresholdCoordinates>
+			<LandingCourse>229.190924</LandingCourse>
+			<RWLength>3998</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N30055180 E031234400 142.341600</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N30071430 E031254140 128.016000</GlideCoordinates>
+				<GlideSlopeAngle>3.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6378137.000000</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+		<RW>
+			<RWName>RW23L</RWName>
+			<Status>0</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30071466 E031270174 142.341600</ThresholdCoordinates>
+			<LandingCourse>229.205024</LandingCourse>
+			<RWLength>3999</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N30054250 E031245890 142.341600</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N30070370 E031265490 154.838400</GlideCoordinates>
+				<GlideSlopeAngle>3.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6378137.000000</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+		<RW>
+			<RWName>RW23R</RWName>
+			<Status>0</Status>
+			<ShowSSA>TRUE</ShowSSA>
+			<ThresholdCoordinates>N30082073 E031242255 60.655200</ThresholdCoordinates>
+			<LandingCourse>229.442241</LandingCourse>
+			<RWLength>3300</RWLength>
+			<RWWidth>60</RWWidth>
+			<Localizer>
+				<LocalizerCoordinates>N00000000 E000000000 -6378137.000000</LocalizerCoordinates>
+				<Bearing>0.000000</Bearing>
+				<Width>0.000000</Width>
+			</Localizer>
+			<Glide>
+				<GlideCoordinates>N00000000 E000000000 -6378137.000000</GlideCoordinates>
+				<GlideSlopeAngle>0.000000</GlideSlopeAngle>
+				<GlideSlopeElevation>0.000000</GlideSlopeElevation>
+				<Width>0.000000</Width>
+			</Glide>
+			<APM>
+				<TDPoint>N00000000 E000000000 -6378137.000000</TDPoint>
+				<MinDistance>0.000000</MinDistance>
+				<MaxDistance>0.000000</MaxDistance>
+				<LateralAngle>0.000000</LateralAngle>
+				<LowerSlope>0.000000</LowerSlope>
+				<UpperSlope>0.000000</UpperSlope>
+			</APM>
+			<LUPAreas>
+				<!--Line Up Areas-->
+			</LUPAreas>
+			<LinesRestrictions />
+			<ShowMeteoOnRunway>TRUE</ShowMeteoOnRunway>
+			<RelatedHoldPoints />
+			<DefaultLandingHoldPoints>
+				<TurbCatL></TurbCatL>
+				<TurbCatM></TurbCatM>
+				<TurbCatH></TurbCatH>
+				<TurbCatJ></TurbCatJ>
+			</DefaultLandingHoldPoints>
+		</RW>
+	</RunWays>
+	<RPAs>
+		<!--Parameters of Runway Protected Areas-->
+	</RPAs>
+	<HPAs>
+		<!--Parameters of Hold Point Areas-->
+	</HPAs>
+	<MPAs />
+	<NTZs />
+	<DeicingAreas />
+	 
+	<Gates>
+		<!--Airport gates (stands)-->
+	</Gates>
+	<Taxiways>
+		<!--Airport taxiways-->
+	</Taxiways>
+	<GroundPoints>
+		<!--Airport ground points-->
+	</GroundPoints>
+	<PushBackRoutes />
+	<!--Airport pushback gate-out routes for departure aircraft-->
+	<PushBackGateInRoutes />
+	<!--Airport PushBack Gate-In routes for arrival aircraft-->
+	<Layers>
+		<!--Layers containing Airport-->
+	</Layers>
+</Airport>

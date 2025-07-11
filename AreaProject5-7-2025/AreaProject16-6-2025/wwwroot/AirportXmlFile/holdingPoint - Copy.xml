@@ -1,0 +1,38 @@
+<HoldingPoints>
+	<HoldingPoint>
+		<Id>1</Id>
+		<Name>FIX01</Name>
+		<Latitude>30.12345</Latitude>
+		<Longitude>31.56789</Longitude>
+		<Direction>Right</Direction>
+		<LegDuration>00:01:00</LegDuration>
+		<AltitudeFeet>6000</AltitudeFeet>
+		<AirportId>1</AirportId>
+	</HoldingPoint>
+
+
+	<HoldingPoint>
+		<Id>2</Id>
+		<Name>FIX02</Name>
+		<Latitude>30.33333</Latitude>
+		<Longitude>31.44444</Longitude>
+		<Direction>Left</Direction>
+		<LegDuration>00:01:00</LegDuration>
+		<AltitudeFeet>5000</AltitudeFeet>
+		<AirportId>1</AirportId>
+	</HoldingPoint>
+
+
+	<HoldingPoint>
+		<Id>3</Id>
+		<Name>FIX03</Name>
+		<Latitude>29.98765</Latitude>
+		<Longitude>30.65432</Longitude>
+		<Direction>Right</Direction>
+		<LegDuration>00:02:00</LegDuration>
+		<AltitudeFeet>7000</AltitudeFeet>
+		<AirportId>1</AirportId>
+	</HoldingPoint>
+
+
+</HoldingPoints>

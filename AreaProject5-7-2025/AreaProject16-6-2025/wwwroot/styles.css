@@ -1,0 +1,177 @@
+﻿
+body {
+    background-color: #f4f9f9;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-container {
+    max-width: 1800px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.main-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h3 {
+    color: #009688;
+    text-align: center;
+}
+
+#map {
+    height: 470px !important;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.btn-aqua { 
+    background: linear-gradient(to right, #008080, #00695c);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.4rem 1.2rem;
+}
+
+    .btn-aqua:hover {
+        background-color: #00796b;
+        transition: background-color 0.3s ease;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+.badge-soft {
+    background-color: #e0f2f1;
+    color: #004d40;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 30px;
+} 
+.dropdown-submenu:hover > .dropdown-menu {
+    display: flex;
+} 
+.d-flex.flex-wrap {
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+#dateTimeInfo {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+#latlongDisplay {
+    min-width: 10px;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    font-weight: bold;
+} 
+.btn-aqua, #latlongDisplay {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.commandLine {
+
+    height:7vh;
+}
+
+@media (max-width: 768px) {
+    #dateTimeInfo, #latlongDisplay {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .btn-aqua {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+        background: linear-gradient(to right, #009688, #00796b);
+    }
+}
+
+#toggleThemeButton {
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #555, #222);
+}
+
+
+/*<style >*/
+
+.media-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.media-controls button {
+    font-size: 18px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #FF8C00;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .media-controls button:hover {
+        background-color: #e67e00;
+    }
+  
+.leaflet-popup-content-wrapper {
+    background-color: transparent !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid #009688 !important; /* لون حد أنيق */
+    border-radius: 10px !important;
+    padding: 8px 12px !important;
+    backdrop-filter: blur(4px); /* تأثير زجاجي ناعم */
+    color: #004d40; /* لون الخط واضح */
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+ 
+.leaflet-popup-tip {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(4px);
+    border: 1px solid #009688;
+}
+
+#elapsedTime {
+    background: #e0f2f1;
+    color:black;   
+    font-weight: bold;  
+}
+
+#loadingSpinner {
+    transform: translate(-50%, -50%);
+}
+
+.top-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+

@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Start Up";
+}
+
+<div class="d-flex vh-100 align-items-center justify-content-center bg-light">
+    <div class="card shadow-lg p-5 rounded-4" style="width: 100%; max-width: 450px;">
+        <h2 class="text-center mb-4 text-primary">Simulator Project</h2>
+        <h5 class="text-center mb-4">Start Up User</h5>
+
+        <form id="startupForm" method="get">
+            <!-- User Type -->
+            <div class="mb-3">
+                <label for="userType" class="form-label">User Type</label>
+                <select class="form-select" id="userType" required>
+                    <option  disabled value="">Choose...</option>
+                    <option selected value="Area">Area</option>
+                    <option value="APP">APP</option>
+                </select>
+            </div>
+
+            <!-- Operator -->
+            <div class="mb-3">
+                <label for="operatorSelection" class="form-label">Operator Role</label>
+                <select class="form-select" id="operatorSelection" required>
+                    <option  disabled value="">Choose...</option>
+                    <option selected value="Controller">Controller</option>
+                    <option value="Planner">Planner</option>
+                    <option value="Pilot">Pilot</option>
+                    <option value="FlightPlane">Flight Plane</option>
+                </select>
+            </div>
+
+            <!-- Sign On -->
+            <div class="mb-4">
+                <label for="SignOnSelection" class="form-label">Sign On</label>
+                <select class="form-select" id="SignOnSelection" required>
+                    <option  disabled value="">Choose...</option>
+                    <option selected value="Ahmed">Ahmed Said Zahran</option>
+                    <option value="Mohamed">Dr/Amged Said</option>
+                    <option value="Abdallah">Mohamed Alaa</option>
+                </select>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-success w-45" onclick="submitSelection()">Start</button>
+                <button type="reset" class="btn btn-outline-secondary w-45">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+        <script>
+            function submitSelection() {
+                const userType = document.getElementById("userType").value;
+                const operator = document.getElementById("operatorSelection").value;
+                const signOn = document.getElementById("SignOnSelection").selectedOptions[0].text;
+
+                if (!userType || !operator || !signOn) {
+                    alert("من فضلك اكمل جميع الحقول.");
+                    return;
+                }
+
+                if (userType === "Area") {
+                    if (operator === "Controller") {
+                        window.location.href = '@Url.Action("ControllerScreen", "Home")' + '?signOnSelection=' + encodeURIComponent(signOn);
+                    } else if (operator === "Planner") {
+                        window.location.href = '@Url.Action("PlannerScreen", "Home")';
+                    } else {
+                        alert("هذا الدور غير مدعوم حالياً.");
+                    }
+                } else if (userType === "APP") {
+                    alert("وضع Approach غير متاح حالياً، يرجى اختيار Area.");
+                }
+            }
+        </script>
+}

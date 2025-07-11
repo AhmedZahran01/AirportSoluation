@@ -1,0 +1,1289 @@
+﻿@using System.Text.Json
+@using AreaProject16_6_2025.ViewModel
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Controller View";
+    ControllerScreenViewModel controllerScreenViewModel =
+             (ControllerScreenViewModel)ViewBag.controllerScreenViewModel;
+}
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container custom-container">
+        <div class="main-card">
+            <div class="d-flex gap-2 flex-wrap mb-3">
+                <div style="background-color:cadetblue" class="btn-aqua align-content-center top-toolbar">
+                    <strong>Area</strong>
+                </div>
+                <div style="background-color:cadetblue" class="btn-aqua align-content-center top-toolbar">
+                    <strong>Controller</strong>
+                </div>
+                <div id="dateTimeInfo" style="background-color:cadetblue" class="btn-aqua align-content-center top-toolbar">
+                    <div id="currentDate"></div>  <div id="currentTime">  </div>  <span id="elapsedTime"></span>
+                </div>
+
+                <button id="toggleVelocityButton" class="btn-aqua top-toolbar">VEL</button>
+
+                <div class="dropdown  ">
+                    <button id="histButton" class="btn-aqua dropdown-toggle top-toolbar" data-bs-toggle="dropdown">
+                        HIST:
+                    </button>
+                    <ul class="dropdown-menu top-toolbar" id="histDropdown">
+                        <li><button class="dropdown-item" onclick="selectHist('None')">None</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('1')">1</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('2')">2</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('3')">3</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('4')">4</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('5')">5</button></li>
+                        <li><button class="dropdown-item" onclick="selectHist('10')">10</button></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown ">
+                    <button id="labelToggle" class="btn-aqua dropdown-toggle">  Label  </button>
+                    <ul class="dropdown-menu" id="labelMenu">
+                        <li><button class="dropdown-item" onclick="selectlabel('Normal')">Normal</button></li>
+                        <li class="dropdown-submenu">
+                            <button class="dropdown-item dropdown-toggle" onclick="openCustomizedDropdown()">Customized</button>
+                            <ul class="dropdown-menu" id="customizedOptions" style="display: none; padding: 10px;">
+                                <li> <input type="checkbox" id="chkSSR" onchange="updateCustomized()"> SSR Code  </li>
+                                <li>  <input type="checkbox" id="chkSpeed" onchange="updateCustomized()"> Track Speed  </li>
+                                <li> <input type="checkbox" id="chkAltitude" onchange="updateCustomized()"> Track Altitude  </li>
+                                <li> <input type="checkbox" id="chkheading" onchange="updateCustomized()"> Track heading  </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown ">
+                    <button id="trackButton" class="btn-aqua dropdown-toggle" data-bs-toggle="dropdown">
+                        select SC:
+                    </button>
+                    <ul class="dropdown-menu" id="trackDropdown">
+                        <li><button class="dropdown-item" onclick="selectSenario('ScenarioNumber1')">Scenario Number 1</button></li>
+                        <li><button class="dropdown-item" onclick="selectSenario('ScenarioNumber2')">Scenario Number 2</button></li>
+                    </ul>
+                </div>
+
+                <div class="mt-0 d-flex flex-wrap gap-2">
+                    <div id="latlongDisplay"
+                         style="background-color:cadetblue;position: absolute; "
+                         class="btn-aqua align-content-center">
+                        Lat:31°8'23"N | Lng:31°21'13"E
+                    </div>
+                </div>
+            </div>
+
+            <div id="map">
+                <div id="media-controls" class="media-controls">
+                    <button id="btnStop" class="btn btn-danger" style="display: none;">  End Sc    </button>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-wrap gap-2 commandLine">
+                <p class="mb-1 badge badge-soft">Sign on : <strong>@controllerScreenViewModel.signOnSelection</strong></p>
+
+                <div class="dropdown">
+                    <button id="mapFeatureslabelToggle" class="btn btn-aqua dropdown-toggle" type="button"
+                            aria-expanded="false">
+                        Map Features
+                    </button>
+                    <ul class="dropdown-menu" id="mapFeatureslabelMenu">
+                        <li class="dropdown-item d-flex justify-content-between align-items-center">
+                            <span>Cairo TMA</span>
+                            <input type="checkbox" id="cairoTMA" onchange="toggleCairoTMA()">
+                        </li>
+                        <li class="dropdown-submenu">
+                            <button class="dropdown-item dropdown-toggle" onclick="openCustomizedmapFeaturesDropdown('feat')">Geographical Features </button>
+                            <ul class="dropdown-menu" id="customizedmapFeaturesOptions" style="display: none; padding: 10px;">
+                                <li> Red Sea  <input class="form-check-input ms-2" type="checkbox" id="redSea" onchange="updatemapFeaturesCustomized('RedSea')">  </li>
+                                <li> Mediterranean <input type="checkbox" id="mediterranean" onchange="updatemapFeaturesCustomized('MedSea')">     </li>
+                                <li>  El Nile  <input type="checkbox" id="elNile" onchange="updatemapFeaturesCustomized('ElNile')">   </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item d-flex justify-content-between align-items-center">
+                            <span>Cairo runways </span>
+                            <input type="checkbox" id="cairorunwaysTMA" onchange="toggleCairorunwaysTMA()">
+                        </li>
+
+                        <li class="dropdown-item d-flex justify-content-between align-items-center">
+                            <span>Airways</span>
+                            <input type="checkbox" id="airways" onchange="toggleAirways()">
+                        </li>
+
+                        <li class="dropdown-item d-flex justify-content-between align-items-center">
+                            <span>Holding Points</span>
+                            <input type="checkbox" id="holdingPoints" onchange="toggleholdingPoints()">
+                        </li>
+                        @* ======= *@
+                        <li class="dropdown-submenu">
+                            <button id="OtherTmalabelToggle" class="dropdown-item dropdown-toggle" onclick="openCustomizedOtherTmaDropdown('feat')">Other Tma </button>
+                            <ul class="dropdown-menu" id="customizedOtherTmaOptions" style="display: none; padding: 10px;">
+                                <li> Aswan <input class="form-check-input ms-2" type="checkbox" id="Aswan" onchange="updateOtherTmaCustomized('Aswan')">  </li>
+                                <li> HURGHADA <input type="checkbox" id="HURGHADA" onchange="updateOtherTmaCustomized('HURGHADA')">     </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button id="toggleThemeButton" class="btn btn-aqua">change Theme</button>
+                @for (int i = 4; i <= 9; i++)
+                {
+                    <span class="badge badge-soft">CL @i</span>
+                }
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+
+            // #region 1-Initialize Map (Some Global Variables) Region
+          
+            // ========== Leaflet Map & Layers ==========
+            let map; let medSeaLayer, redSeaLayer, airwaysLayer, nileLayer, firLayer,
+                cairoTmaLayer, AswanTmaLayer, HURGHADATmaLayer, cairorunTmaLayers = []; let lightTiles, darkTiles;
+            let showVelocity = false; let labelMode = "Normal"; let currentTheme = 'light';
+            // ========== Map Controls & State ==========
+            let checkZoomFirstTime = true; let selectHistCountVariable = 0; let marker, historyMarker = null; let histMarkers = [];
+            // ========== Markers & Tracking ==========
+            let planeMarkers = {}; let trackPaths = {}; let lastTracksData; let previousTrackPositions = {}; let latestTransaction;
+            let customizedOptions = { ssr: false, speed: false, altitude: false, heading: false };
+            let customizedTtackOptions = { ChecktrackOne: false, ChecktrackTwo: false };
+            // ========== Customization Options ==========
+            let customizedmapFeaturesOptions = { redsea: false, mediterranean: false, elNile: false };
+            let customizedOtherTmaOptions = { Aswan: false, HURGHADA: false }; let heading;
+            // ==========  key: aircraft ID, value: marker object ==========
+            let aircraftMarkers = {};
+            // ========== Time & Interval ==========
+            let isPaused = false; let startScenarioTimer; let secondsSc, minutesSc; let isRunning = false;
+            let elapsedTime = 0; let intervalIdForScenario = null; let elapsedInterval = null; let stopTimerScenario = true;
+
+            // ==========  Holding & Test ==========
+            let holdingPointsLayer, trackValueForHolding = 'NoHereTrackValue', holdingPlaneMarker = null;
+            let holdingPlaneInterval = null, index = 0, checkHoldingData = false, removeTrackFromTracksList = false;
+
+            //--             // ==========  Holding & Test ==========
+            let holdingInterval = null; // المؤقت الخاص بالحركة داخل الـ Holding
+            let isHolding = false; // حالة التواجد داخل الـ Holding
+
+
+            // #endregion
+
+            // #region 2-start Map Region
+
+            lightTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors',
+                subdomains: 'abcd',
+                maxZoom: 19
+            });
+            darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; CartoDB',
+                subdomains: 'abcd',
+                maxZoom: 19
+            });
+            document.addEventListener("DOMContentLoaded", () => {
+                initializeMap();
+                setInterval(updateDateTime, 1000);
+                const dropdownButtons = [
+                    'histButton', 'trackButton',
+                    'labelToggle', 'mapFeatureslabelToggle'
+                ];
+                dropdownButtons.forEach(id => {
+                    const btn = document.getElementById(id);
+                    const dropdown = new bootstrap.Dropdown(btn);
+                    btn.addEventListener('click', e => {
+                        e.preventDefault(); dropdown.toggle();
+                    });
+                });
+                // Mousemove lat/lng display
+                map.on('mousemove', e => {
+                    const latDMS = convertToDMS(e.latlng.lat, true);
+                    const lngDMS = convertToDMS(e.latlng.lng, false);
+                    document.getElementById("latlongDisplay").innerHTML = `Lat: ${latDMS} <br/>Lng: ${lngDMS}`;
+                });
+                // Toggle Velocity Button
+                document.getElementById("toggleVelocityButton").addEventListener("click", () => {
+                    showVelocity = !showVelocity;
+                    Object.entries(planeMarkers).forEach(([trackId, marker]) => {
+                        const latest = lastTracksData?.find(t => t.Id == trackId)?.trackTransactions?.slice(-1)[0];
+                        const heading = latest?.trackHeading || 0;
+                        marker.setIcon(createPlaneIcon(showVelocity, heading));
+                    });
+                });
+                document.getElementById('toggleThemeButton').addEventListener('click', () => {
+                    if (currentTheme === 'light') {
+                        map.removeLayer(lightTiles);
+                        map.addLayer(darkTiles);
+                        currentTheme = 'dark';
+                    } else {
+                        map.removeLayer(darkTiles);
+                        map.addLayer(lightTiles);
+                        currentTheme = 'light';
+                    }
+                });
+                document.getElementById("btnStop").addEventListener("click", () => {
+                    fetch('/api/tracksApiJson/latest?checkStartScenario=false')
+                        .then(() => {
+                            console.log("Stopped scenario.");
+                        });
+                    if (elapsedInterval) {
+                        clearInterval(elapsedInterval);
+                        clearInterval(intervalIdForScenario);
+                        elapsedInterval = null;
+                        intervalIdForScenario = null;
+                    }
+                    elapsedTime = 0;
+                    document.getElementById("btnStop").style.display = "none";
+                    if (!isRunning) {
+                        document.getElementById("elapsedTime").style.display = "none";
+                    }
+                    else {
+                        document.getElementById("elapsedTime").style.display = "block";
+                    }
+
+                    Object.values(planeMarkers).forEach(marker => map.removeLayer(marker));
+                    planeMarkers = {};
+                    trackPaths = {};
+                    previousTrackPositions = {};
+
+                    if (holdingPlaneMarker) {
+                        map.removeLayer(holdingPlaneMarker);
+                        holdingPlaneMarker = null;
+                    }
+
+
+                });
+            });
+            // =======------------------------- Initialize Map Region ----------------======
+            function initializeMap() {
+                const lat = 30.177, lng = 31.44;
+                map = L.map('map', {
+                    center: [lat, lng],
+                    zoom: 13,
+                    layers: [currentTheme === 'light' ? lightTiles : darkTiles]
+                });
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                // =======================================
+                // const fixLatLng2 = [30.12345, 31.56789];  // إعداد الخريطة على نقطة FIX01
+            }
+            // =======------------------------- 1-Data Time Region -------------------------------------------------------------====
+            function updateDateTime() {
+                const now = new Date();
+                document.getElementById("currentDate").textContent = `Date:${now.toISOString().split('T')[0]}`;
+                document.getElementById("currentTime").textContent = `UTC:${now.toUTCString().split(' ')[4]}`;
+            }
+            // #endregion
+            // =======------------------------- 6-Choose Scenario Region -------------------------------------------------------------====
+            // #region 3-Senario Region
+            function selectSenario(value) {
+                document.getElementById("trackButton").textContent = `${value}`;
+                if (intervalIdForScenario) {
+                    clearInterval(intervalIdForScenario); intervalIdForScenario = null;
+                }
+                if (value === 'ScenarioNumber1') {
+                    isRunning = true; clearInterval(intervalIdForScenario); intervalIdForScenario = null;
+                    stopTimerScenario = false; document.getElementById("btnStop").style.display = "block";
+                    startScenarioTimer = new Date();
+                    elapsedInterval = setInterval(() => {
+                        elapsedTime = Date.now() - startScenarioTimer;
+                        const minutesSc = Math.floor(elapsedTime / 60000);
+                        const secondsSc = Math.floor((elapsedTime % 60000) / 1000);
+                        document.getElementById("elapsedTime").textContent =
+                            `Elapsed Time: ${minutesSc}m ${secondsSc}s`;
+                    }, 1000); updateTrackTransactions();
+                    intervalIdForScenario = setInterval(updateTrackTransactions, 1000);
+                }
+                if (value === 'ScenarioNumber2') {
+                    // ✅ شغّل التراكات زي السيناريو الأول
+                    isRunning = true; clearInterval(intervalIdForScenario); intervalIdForScenario = null;
+                    stopTimerScenario = false; startScenarioTimer = new Date();
+
+                    document.getElementById("btnStop").style.display = "block";
+
+                    elapsedInterval = setInterval(() => {
+                        elapsedTime = Date.now() - startScenarioTimer;
+                        const minutesSc = Math.floor(elapsedTime / 60000);
+                        const secondsSc = Math.floor((elapsedTime % 60000) / 1000);
+                        document.getElementById("elapsedTime").textContent =
+                            `Elapsed Time: ${minutesSc}m ${secondsSc}s`;
+                    }, 1000); updateTrackTransactionsofSceondSc();
+                    intervalIdForScenario = setInterval(updateTrackTransactionsofSceondSc, 1000);
+                }
+            }
+            function updateTrackTransactions() {
+                fetch('/api/tracksApiJson/latest?checkStartScenario=true')
+                    .then(response => response.json())
+                    .then(tracksJson => {
+                        lastTracksData = tracksJson; // استخدمه لاحقًا لتحديث البوب أب
+                        tracksJson.forEach(track => {
+                            if (track.trackTransactions && track.trackTransactions.length > 0) {
+                                var transactions = track.trackTransactions;
+                                latestTransaction = transactions[transactions.length - 1];
+                                heading = latestTransaction.trackHeading; // default if no previous data
+                                const prev = previousTrackPositions[track.Id];
+                                if (prev) {
+                                    heading = calculateHeading(prev.lat, prev.lng, latestTransaction.trackLatitude, latestTransaction.trackLongitude);
+                                    var planeIcon = createPlaneIcon(showVelocity, heading);
+                                } else {
+                                    console.log(`⚠️ No previous position for track ${track.Id}`);
+                                }
+                                // حدث الموقع السابق
+                                previousTrackPositions[track.Id] = {
+                                    lat: latestTransaction.trackLatitude,
+                                    lng: latestTransaction.trackLongitude
+                                };
+                                if (trackPaths[track.Id]) {
+                                    trackPaths[track.Id].forEach(marker => map.removeLayer(marker));
+                                }
+                                trackPaths[track.Id] = [];
+                                if (planeMarkers[track.Id]) {
+                                    planeMarkers[track.Id].setLatLng([latestTransaction.trackLatitude, latestTransaction.trackLongitude]);
+                                    if (selectHistCountVariable > 0) {
+                                        const transactions = track.trackTransactions;
+                                        const startIndex = Math.max(0, transactions.length - selectHistCountVariable);
+                                        // إزالة الهيستوري القديم
+                                        if (trackPaths[track.Id]) {
+                                            trackPaths[track.Id].forEach(m => map.removeLayer(m));
+                                        }
+                                        trackPaths[track.Id] = [];
+                                        // رسم الهيستوري الجديد
+                                        for (let i = startIndex; i < transactions.length; i++) {
+                                            const tx = transactions[i];
+                                            const histMarker = L.circleMarker([tx.trackLatitude, tx.trackLongitude], {
+                                                radius: 3,
+                                                color: 'red',
+                                                fillColor: 'red',
+                                                fillOpacity: 0.8
+                                            }).addTo(map);
+                                            trackPaths[track.Id].push(histMarker);
+                                        }
+                                    }
+                                    const data = {
+                                        number: track.Id,
+                                        ssr: track.Name || "N/A",
+                                        speed: latestTransaction.trackspeed,
+                                        altitude: latestTransaction.altitude,
+                                        heading: heading
+                                    };
+                                    const popupContent = createPopupContent(labelMode, data);
+                                    planeMarkers[track.Id].setPopupContent(popupContent); // ✅ تحديث المحتوى هنا
+                                }
+                                else {
+                                    var planeIcon = createPlaneIcon(showVelocity, heading);
+                                    const data = {
+                                        number: track.Id,
+                                        ssr: track.Name || "N/A",
+                                        speed: latestTransaction.trackspeed,
+                                        altitude: latestTransaction.trackAltitude,
+                                        heading: latestTransaction.trackHeading
+                                    };
+                                    const popupContent = createPopupContent(labelMode, data);
+                                    var planeMarker = L.marker([latestTransaction.trackLatitude, latestTransaction.trackLongitude], { icon: planeIcon })
+                                        .addTo(map)
+                                        .bindPopup(popupContent, { autoClose: false, closeOnClick: false });
+                                    planeMarkers[track.Id] = planeMarker;
+                                }
+                            }
+                            else {
+                                console.log(`❌ لا توجد بيانات لحركة الطائرة للمسار: ${track.Id}`);
+                            }
+                        });
+                        if (checkZoomFirstTime && tracksJson.length > 0 && tracksJson[0].trackTransactions?.length > 0) {
+                            let firstTrackLat = tracksJson[0].trackTransactions[0].trackLatitude,
+                                firstTrackLng = tracksJson[0].trackTransactions[0].trackLongitude;
+                            map.setView([firstTrackLat, firstTrackLng], 13);
+                            checkZoomFirstTime = false;
+                        }
+                        renderHistPoints(tracksJson, selectHistCountVariable);
+                    }).catch(error => console.error("❌ خطأ في تحميل بيانات المسارات:", error));
+
+            }
+            function toggleholdingPoints() {
+                const isChecked = document.getElementById('holdingPoints').checked;
+                if (isChecked) {
+                    var holdingPoints = @Html.Raw(JsonConvert.SerializeObject(@controllerScreenViewModel.holdingPointsViewModels));
+                    holdingPointsLayer = L.layerGroup();
+                    holdingPoints.forEach(hp => {
+                        const isTargetHoldingPoint = hp.Id === 1; // ✅ غير الرقم حسب الـ holding point المستهدف
+
+                        const marker = L.marker([hp.Latitude, hp.Longitude], {
+                            icon: L.divIcon({
+                                className: 'custom-holding-icon',
+                                html: `<div style="background-color: ${isTargetHoldingPoint ? 'brown' : 'black'}; width: 14px; height: 14px; border-radius: 50%;"></div>`,
+                                iconSize: [14, 14],
+                                iconAnchor: [7, 7]
+                            })
+                        }).addTo(map)
+                            .bindPopup(`
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <b>${hp.Name}</b><br/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Altitude: ${hp.AltitudeFeet} ft<br/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Turn: ${hp.Direction}<br/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Leg: ${hp.LegDuration} min
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                `);
+
+                        if (hp.Id == 1) {
+                            map.setView([hp.Latitude, hp.Longitude], 14);
+                        }
+
+                        // رسم racetrack حوالي المركز (hp.lat, hp.lng)
+                        const semiLeg = 0.01 * hp.LegDuration;  // الطول (تقريبي)
+                        const width = 0.005; // عرض النصف الدائري
+                        let points;
+                        if (hp.Direction === "Right") {
+                            points = [
+                                [hp.Latitude, hp.Longitude],
+                                [hp.Latitude + width, hp.Longitude + semiLeg],
+                                [hp.Latitude, hp.Longitude + 2 * semiLeg],
+                                [hp.Latitude - width, hp.Longitude + semiLeg],
+                                [hp.Latitude, hp.Longitude]
+                            ];
+                        } else {
+                            points = [
+                                [hp.Latitude, hp.Longitude],
+                                [hp.Latitude + width, hp.Longitude - semiLeg],
+                                [hp.Latitude, hp.Longitude - 2 * semiLeg],
+                                [hp.Latitude - width, hp.Longitude - semiLeg],
+                                [hp.Latitude, hp.Longitude]
+                            ];
+                        }
+
+                        const polyline = L.polyline(points, {
+                            color: isTargetHoldingPoint ? 'brown' : (hp.Direction === "Right" ? 'blue' : 'red'),
+                            weight: 8,
+                            dashArray: '5,5'
+                        });
+                        polyline.addTo(holdingPointsLayer);
+                    });
+                    holdingPointsLayer.addTo(map);
+                }
+                else {
+                    if (holdingPointsLayer) {
+                        map.removeLayer(holdingPointsLayer);
+                        holdingPointsLayer = null;
+                    }
+                }
+            }
+            // -                                              -               ---  New Sc Added  ------ ===
+            function SubmitTrack() {
+                if (trackValueForHolding === "TrackNumberOneChoosed") {
+                    isRunning = true; removeTrackFromTracksList = true;
+                    clearInterval(intervalIdForScenario); intervalIdForScenario = null;
+                    intervalIdForScenario = setInterval(updateTrackTransactionsofSceondSc, 1000);
+                    checkHoldingData = true;
+                    const track = lastTracksData.find(t => t.Id === 1);
+                    const fix01 = @Html.Raw(JsonConvert.SerializeObject(@controllerScreenViewModel.holdingPointsViewModels.Find(i => i.Id == 1)));
+                    movePlaneToHoldingThenBack(track, fix01);
+                    document.getElementById("btnStop").style.display = "block";
+                }
+            }
+            function updateTrackTransactionsofSceondSc() {
+                let url = '/api/tracksApiJson/latest?checkStartScenario=true';
+                if (removeTrackFromTracksList) url += '&deleteTrackOne=true';
+
+                fetch(url)
+                    .then(response => response.json())
+                    .then(processTracksData)
+                    .catch(error => console.error("❌ خطأ في تحميل بيانات المسارات:", error));
+            }
+            function processTracksData(tracksJson) {
+                lastTracksData = tracksJson;
+                tracksJson.forEach(track => {
+                    if (track.trackTransactions && track.trackTransactions.length > 0) {
+                        const transactions = track.trackTransactions;
+                        latestTransaction = transactions[transactions.length - 1];
+                        heading = latestTransaction.trackHeading;
+
+                        const prev = previousTrackPositions[track.Id];
+                        if (prev) {
+                            heading = calculateHeading(prev.lat, prev.lng, latestTransaction.trackLatitude, latestTransaction.trackLongitude);
+                        } else {
+                            console.log(`⚠️ No previous position for track ${track.Id}`);
+                        }
+
+                        previousTrackPositions[track.Id] = {
+                            lat: latestTransaction.trackLatitude,
+                            lng: latestTransaction.trackLongitude
+                        };
+
+                        if (trackPaths[track.Id]) {
+                            trackPaths[track.Id].forEach(marker => map.removeLayer(marker));
+                        }
+                        trackPaths[track.Id] = [];
+
+                        if (planeMarkers[track.Id]) {
+                            planeMarkers[track.Id].setLatLng([latestTransaction.trackLatitude, latestTransaction.trackLongitude]);
+
+                            if (selectHistCountVariable > 0) {
+                                const startIndex = Math.max(0, transactions.length - selectHistCountVariable);
+                                if (trackPaths[track.Id]) {
+                                    trackPaths[track.Id].forEach(m => map.removeLayer(m));
+                                }
+                                trackPaths[track.Id] = [];
+                                for (let i = startIndex; i < transactions.length; i++) {
+                                    const tx = transactions[i];
+                                    const histMarker = L.circleMarker([tx.trackLatitude, tx.trackLongitude], {
+                                        radius: 3,
+                                        color: 'red',
+                                        fillColor: 'red',
+                                        fillOpacity: 0.8
+                                    }).addTo(map);
+                                    trackPaths[track.Id].push(histMarker);
+                                }
+                            }
+
+                            const data = {
+                                number: track.Id,
+                                ssr: track.Name || "N/A",
+                                speed: latestTransaction.trackspeed,
+                                altitude: latestTransaction.altitude,
+                                heading: heading
+                            };
+                            const popupContent = createPopupContent(labelMode, data);
+                            planeMarkers[track.Id].setPopupContent(popupContent);
+                        } else {
+                            var planeIcon = createPlaneIcon(showVelocity, heading);
+                            const data = {
+                                number: track.Id,
+                                ssr: track.Name || "N/A",
+                                speed: latestTransaction.trackspeed,
+                                altitude: latestTransaction.altitude,
+                                heading: heading
+                            };
+                            const popupContent = createPopupContent(labelMode, data);
+                            var planeMarker = L.marker([latestTransaction.trackLatitude, latestTransaction.trackLongitude], { icon: planeIcon })
+                                .addTo(map)
+                                .bindPopup(popupContent, { autoClose: false, closeOnClick: false });
+                            planeMarkers[track.Id] = planeMarker;
+                        }
+                    } else {
+                        console.log(`❌ لا توجد بيانات لحركة الطائرة للمسار: ${track.Id}`);
+                    }
+                });
+
+                if (checkZoomFirstTime && tracksJson.length > 0 && tracksJson[0].trackTransactions?.length > 0) {
+                    let firstTrackLat = tracksJson[0].trackTransactions[0].trackLatitude,
+                        firstTrackLng = tracksJson[0].trackTransactions[0].trackLongitude;
+                    map.setView([firstTrackLat, firstTrackLng], 13);
+                    checkZoomFirstTime = false;
+                }
+
+                renderHistPoints(tracksJson, selectHistCountVariable);
+            }
+            async function movePlaneToHoldingThenBack(track, holdingPoint) {
+                const latestTx = track.trackTransactions.at(-1);
+                const start = [latestTx.trackLatitude, latestTx.trackLongitude];
+
+                if (planeMarkers[track.Id]) {
+                    map.removeLayer(planeMarkers[track.Id]);
+                    delete planeMarkers[track.Id];
+                }
+
+                const fix = [holdingPoint.Latitude, holdingPoint.Longitude];
+
+                const holdingPatternData = {
+                    Latitude: holdingPoint.Latitude,
+                    Longitude: holdingPoint.Longitude,
+                    Direction: holdingPoint.Direction,
+                    LegDuration: holdingPoint.LegDuration
+                };
+
+                const cairoAirport = [30.111001, 31.4067];
+                const toFixPoints = getIntermediatePoints(start, fix, 30);
+                const backPoints = getIntermediatePoints(fix, cairoAirport, 30);
+
+                if (holdingPlaneMarker) map.removeLayer(holdingPlaneMarker);
+
+                let i = 0;
+                holdingPlaneMarker = L.marker(toFixPoints[0], {
+                    icon: createPlaneIcon(showVelocity, 0)
+                }).addTo(map);
+
+                // ✈️ تحرك إلى FIX
+                const moveToFix = () => {
+                    return new Promise(resolve => {
+                        const interval = setInterval(() => {
+                            if (i < toFixPoints.length) {
+                                holdingPlaneMarker.setLatLng(toFixPoints[i]);
+                                map.panTo(toFixPoints[i]);
+                                i++;
+                            } else {
+                                clearInterval(interval);
+                                resolve();
+                            }
+                        }, 1000);
+                    });
+                };
+
+                const moveToThreshold = () => {
+                    return new Promise(resolve => {
+                        let j = 0;
+                        const interval = setInterval(() => {
+                            if (j < backPoints.length) {
+                                holdingPlaneMarker.setLatLng(backPoints[j]);
+                                j++;
+                            } else {
+                                clearInterval(interval);
+                                console.log("🛬 وصلت إلى Threshold");
+                                resolve();
+                            }
+                        }, 1000);
+                    });
+                };
+
+                // ✈️ بدء التنفيذ
+                await moveToFix();
+
+                // ✅ عرض الـ Popup بعد الوصول إلى FIX
+                const data = {
+                    number: track.Id,
+                    ssr: track.Name || "N/A",
+                    speed: latestTx.trackspeed,
+                    altitude: latestTx.trackAltitude,
+                    heading: latestTx.trackHeading
+                };
+                const popupContent = createPopupContent(labelMode, data);
+
+                holdingPlaneMarker.bindPopup(popupContent, { autoClose: false, closeOnClick: false });
+
+                holdingPlaneMarker.on("popupopen", () => {
+                    const startBtn = document.getElementById(`startHoldingBtn-${track.Id}`);
+                    const endBtn = document.getElementById(`endHoldingBtn-${track.Id}`);
+                    if (startBtn) startBtn.style.display = "none";
+                    if (endBtn) endBtn.style.display = "block";
+                });
+                // ✈️ الدخول في الـ Holding Pattern
+                const pattern = generateHoldingPattern(holdingPatternData, 40);
+                await waitInHolding(pattern);
+                // ✈️ العودة إلى المطار بعد الخروج من Holding
+                await moveToThreshold();
+            }
+
+            function getIntermediatePoints(start, end, numPoints) {
+                const points = [];
+                const dLat = (end[0] - start[0]) / (numPoints + 1);
+                const dLng = (end[1] - start[1]) / (numPoints + 1);
+                for (let i = 1; i <= numPoints; i++) {
+                    points.push([start[0] + dLat * i, start[1] + dLng * i]);
+                }
+                return points;
+            }
+            function generateHoldingPattern(hp, pointsCount = 40) {
+                const lat = parseFloat(hp.Latitude);
+                const lng = parseFloat(hp.Longitude);
+                const direction = hp.Direction;
+
+                // دعم الحالتين: "00:01:00" أو رقم مباشر
+                let legMinutes;
+                if (typeof hp.LegDuration === "string" && hp.LegDuration.includes(":")) {
+                    legMinutes = parseInt(hp.LegDuration.split(':')[1]);
+                } else {
+                    legMinutes = parseInt(hp.LegDuration);
+                }
+                const semiLeg = 0.01 * legMinutes; const width = 0.005;
+                // نفس نقاط الشكل اللي بترسم في toggleholdingPoints
+                const points = direction === "Right"
+                    ? [
+                        [lat, lng],
+                        [lat + width, lng + semiLeg],
+                        [lat, lng + 2 * semiLeg],
+                        [lat - width, lng + semiLeg],
+                        [lat, lng]
+                    ]
+                    : [
+                        [lat, lng],
+                        [lat + width, lng - semiLeg],
+                        [lat, lng - 2 * semiLeg],
+                        [lat - width, lng - semiLeg],
+                        [lat, lng]
+                    ];
+                // توزيع الطيارة على هذه النقاط بشكل متدرج (interpolation)
+                const pattern = [];
+                for (let i = 0; i < points.length - 1; i++) {
+                    const [startLat, startLng] = points[i];
+                    const [endLat, endLng] = points[i + 1];
+                    for (let j = 0; j < pointsCount / (points.length - 1); j++) {
+                        const ratio = j / (pointsCount / (points.length - 1));
+                        pattern.push([
+                            startLat + (endLat - startLat) * ratio,
+                            startLng + (endLng - startLng) * ratio
+                        ]);
+                    }
+                }
+
+                return pattern;
+            }
+            function endHolding(trackId) {
+                isHolding = false;
+
+                const endBtn = document.getElementById(`endHoldingBtn-${trackId}`);
+                const startBtn = document.getElementById(`startHoldingBtn-${trackId}`);
+
+                if (endBtn) endBtn.style.display = "none";
+                if (startBtn) startBtn.style.display = "block";
+            }
+            function waitInHolding(pattern) {
+                return new Promise(resolve => {
+                    let k = 0;
+                    isHolding = true;
+
+                    holdingInterval = setInterval(() => {
+                        if (!isHolding) {
+                            clearInterval(holdingInterval);
+                            resolve(); // نكمل بعد الخروج من الهولدينج
+                            return;
+                        }
+
+                        holdingPlaneMarker.setLatLng(pattern[k]);
+                        map.panTo(pattern[k]); // تتبع الكاميرا
+                        k = (k + 1) % pattern.length; // دورة لا نهائية
+                    }, 1000);
+                });
+            }
+
+            function assignHoldingPoint(trackId) {
+                const track = lastTracksData.find(t => t.Id === trackId);
+                if (!track || !track.trackTransactions || !track.trackTransactions.length) {
+                    alert("❌ No track data found.");
+                    return;
+                } 
+                const holdingPoints = @Html.Raw(JsonConvert.SerializeObject(@controllerScreenViewModel.holdingPointsViewModels));
+
+                let options = holdingPoints.map(hp => `<option value="${hp.Id}">${hp.Name}</option>`).join('');
+
+                Swal.fire({
+                    title: 'Select Holding Point',
+                    html: `<select id="holdingSelect" class="swal2-select">${options}</select>`,
+                    confirmButtonText: 'Go',
+                    showCancelButton: true,
+                    preConfirm: () => document.getElementById('holdingSelect').value
+                }).then(result => {
+                    if (result.isConfirmed) {
+                        const selectedId = result.value;
+                        const selectedHp = holdingPoints.find(hp => hp.Id == selectedId);
+                        if (selectedHp) {
+
+                            isRunning = true; removeTrackFromTracksList = true;
+                            clearInterval(intervalIdForScenario); intervalIdForScenario = null;
+                            intervalIdForScenario = setInterval(updateTrackTransactionsofSceondSc, 1000);
+                            checkHoldingData = true;
+
+                            movePlaneToHoldingThenBack(track, selectedHp);
+
+                            // ✅ اختياري: وقف التراك اللي في الخلفية لو تحب
+                            if (intervalIdForScenario) {
+                                clearInterval(intervalIdForScenario);
+                                intervalIdForScenario = null;
+                            }
+
+                            // ✅ إظهار زر الإيقاف
+                            document.getElementById("btnStop").style.display = "block";
+                        }
+                    }
+                });
+            }
+           
+
+            // #endregion  
+            // =======------------------------- 3-VEL and Hist Region -------------------------------------------------------------====
+            // #region 4-Plane Icon select Hist Region
+            function createPlaneIcon(showVel, heading = 0) {
+                return L.divIcon({
+                    className: 'plane-icon',
+                    iconSize: [40, 60],
+                    html: `
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div style="transform: rotate(${heading}deg); transform-origin: center;">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                <svg width="40" height="60" viewBox="0 0 40 60">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ${showVel ? `
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- سهم في اتجاه الحركة -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <line x1="20" y1="10" x2="20" y2="0" stroke="#FF8C00" stroke-width="2"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <polygon points="18,0 22,0 20,-6" fill="#FF8C00"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ` : ''}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- دائرة -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <circle cx="20" cy="20" r="10" stroke="#FF8C00" stroke-width="2" fill="none"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- خط رأسي داخل الدائرة -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <line x1="20" y1="10" x2="20" y2="30" stroke="#FF8C00" stroke-width="2"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- خط أفقي داخل الدائرة -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <line x1="10" y1="20" x2="30" y2="20" stroke="#FF8C00" stroke-width="2"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                </svg>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>`
+                });
+            }
+            function selectHist(value) {
+                document.getElementById("histButton").textContent = `HIST: ${value}`;
+                selectHistCountVariable = value === 'None' ? 0 : parseInt(value);
+            }
+            function renderHistPoints(tracksJson, count) {
+                histMarkers.forEach(m => map.removeLayer(m));
+                histMarkers = [];
+                if (!tracksJson || tracksJson.length === 0 || count === 0) return;
+                tracksJson.forEach(track => {
+                    if (track.trackTransactions && track.trackTransactions.length > 1) {
+                        const transactions = track.trackTransactions;
+                        const endIndex = Math.max(0, transactions.length - 1); // تجاهل الأخيرة
+                        const startIndex = Math.max(0, endIndex - count);
+                        for (let i = startIndex; i < endIndex; i++) {
+                            const tx = transactions[i];
+                            const lat = tx.trackLatitude;
+                            const lng = tx.trackLongitude;
+                            const marker = L.circleMarker([lat, lng], {
+                                radius: 3,
+                                color: 'red',
+                                fillColor: 'red',
+                                fillOpacity: 0.8
+                            }).addTo(map);
+                            histMarkers.push(marker);
+                        }
+                    }
+                });
+            }
+            // #endregion
+            // =======------------------------- 5-Label Region -------------------------------------------------------------====
+            // #region 5-label Region
+            function selectlabel(value) {
+                labelMode = value;
+                if (value === 'Normal') {
+                    const customizedDivw = document.getElementById('customizedOptions');
+                    customizedDivw.style.display = 'none';
+                    // الغي تفعيل الـ checkboxes
+                    document.getElementById('chkSSR').checked = false;
+                    document.getElementById('chkSpeed').checked = false;
+                    document.getElementById('chkAltitude').checked = false;
+                    document.getElementById('chkheading').checked = false;
+                    // حدث حالة الخيارات
+                    customizedOptions = { ssr: false, speed: false, altitude: false, heading: false };
+                }
+                // تحديث جميع الـ popups
+                Object.entries(planeMarkers).forEach(([id, marker]) => {
+                    const track = lastTracksData.find(t => t.Id == id);
+                    if (!track || !track.trackTransactions.length) return;
+                    const latest = track.trackTransactions[track.trackTransactions.length - 1];
+                    const data = {
+                        number: track.Id,
+                        ssr: (track.Name && track.Name.trim() !== "") ? track.Name : "N/A",
+                        speed: latest.trackspeed,
+                        altitude: latest.trackAltitude,
+                        heading: latest.trackHeading
+                    };
+                    marker.setPopupContent(createPopupContent(labelMode, data));
+                });
+            }
+            function createPopupContent(labelMode, data) {
+                let content = "";
+                if (labelMode === "Customized") {
+                    content += "✈️ ";
+                    if (customizedOptions.ssr) content += `<br>SSR Code: ${data.ssr}`;
+                    if (customizedOptions.speed) content += `<br>Speed: ${data.speed} knots`;
+                    if (customizedOptions.altitude) content += `<br>Altitude: ${data.altitude} ft`;
+                    if (customizedOptions.heading) content += `<br>Heading: ${data.heading}°`;
+                    if (!customizedOptions.ssr && !customizedOptions.speed && !customizedOptions.altitude && !customizedOptions.heading)
+                        content += "<br>No Data Selected.";
+                } else {
+                    content += `
+                                                                                                                                                SSR = ${data.ssr}<br>
+                                                                                                                                                Track Altitude: ${data.altitude}<br>
+                                                                                                                                                Track Speed: ${data.speed}<br>
+                                                                                                                                                Track Heading: ${data.heading}
+                                                                                                                                            `;
+                }
+
+                content += `<br><button id="startHoldingBtn-${data.number}" class="btn btn-sm btn-warning mt-2" onclick="assignHoldingPoint(${data.number})">Assign Holding Point</button>`;
+                content += `<br><button id="endHoldingBtn-${data.number}" style="display: none;" class="btn btn-sm btn-warning mt-2" onclick="endHolding(${data.number})"> End Holding </button>`;
+                return content;
+            }
+            function updateCustomized() {
+                customizedOptions.ssr = document.getElementById('chkSSR').checked;
+                customizedOptions.speed = document.getElementById('chkSpeed').checked;
+                customizedOptions.altitude = document.getElementById('chkAltitude').checked;
+                customizedOptions.heading = document.getElementById('chkheading').checked;
+
+                // تحديث كل الـ popups بناءً على الإعدادات الجديدة
+                Object.entries(planeMarkers).forEach(([id, marker]) => {
+                    const track = lastTracksData?.find(t => t.Id == id);
+                    if (!track || !track.trackTransactions.length) return;
+
+                    const latest = track.trackTransactions[track.trackTransactions.length - 1];
+                    const data = {
+                        number: track.Id,
+                        ssr: track.Name || "N/A",
+                        speed: latest.trackspeed,
+                        altitude: latest.trackAltitude,
+                        heading: heading
+                    };
+                    updatePopup(marker, data);
+                });
+            }
+            function updatePopup(marker, data) {
+                const popupContent = createPopupContent(labelMode, data);
+                marker.setPopupContent(popupContent);
+            }
+            function toggleCustomized() {
+                const customizedDiv = document.getElementById('customizedOptions');
+                if (customizedDiv.style.display === 'none') {
+                    customizedDiv.style.display = 'block';
+                } else {
+                    customizedDiv.style.display = 'none';
+                }
+                labelMode = "Customized";
+            }
+            function openCustomizedDropdown() {
+                const customizedDiv = document.getElementById('customizedOptions');
+                if (customizedDiv.style.display === 'none') {
+                    customizedDiv.style.display = 'block';
+                }
+                const dropdownMenu = document.getElementById('labelToggle').nextElementSibling;  // تحديد الـ dropdown التابع للـ Label
+                const bootstrapDropdown = new bootstrap.Dropdown(dropdownMenu);
+                bootstrapDropdown.show();
+                labelMode = "Customized";
+            }
+            
+            // #endregion
+             
+
+            // =======------------------------- 5-Label Region -------------------------------------------------------------====
+            // #region 6-map Features  Region
+            function selectmapFeatureslabel(value) {
+                labelMode = value;
+                document.getElementById("mapFeatureslabelToggle").innerText = `Map: `;
+                if (labelMode === 'CairoTMA') {
+                    var LatitudeDecimalCairoAirport = 30.114;
+                    var LongitudeDecimalCairoAirport = 31.44;
+                    var airportIcon = L.icon({
+                        iconUrl: 'https://www.svgrepo.com/show/500079/airport.svg',
+                        iconSize: [20, 20], // تم تقليل الحجم من 32x32 إلى 20x20
+                        iconAnchor: [10, 10] // يفضل ضبط الـ anchor ليكون في منتصف الأيقونة الجديدة
+                    });
+                    let latConvertDiplayStructure = LatitudeDecimalCairoAirport.toFixed(1); // النتيجة هتكون "30.1" كنص
+                    let lngConvertDiplayStructure = LongitudeDecimalCairoAirport.toFixed(1); // مثلاً "31.2"
+                    L.marker([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], { icon: airportIcon })
+                        .addTo(map).bindPopup(`<b> </b>     data base مطار القاهره من ال   <br> 📍 الإحداثيات: (${latConvertDiplayStructure}, ${lngConvertDiplayStructure})`);
+                    map.setView([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], 13);
+                }
+                else {
+                    updatemapFeaturesPopup();
+                }
+            }
+            function createmapfeaturePopupContent(labelMode) {
+                let value = labelMode;
+                if (value === "CairoTMA") {
+                    var LatitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LatitudeCairoDecimal);
+                    var LongitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LongitudeCairoDecimal);
+                    var airportIcon = L.icon({
+                        iconUrl: 'https://www.svgrepo.com/show/500079/airport.svg',
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 16]
+                    });
+                    let latConvertDiplayStructure = LatitudeDecimalCairoAirport.toFixed(1); // النتيجة هتكون "30.1" كنص
+                    let lngConvertDiplayStructure = LongitudeDecimalCairoAirport.toFixed(1); // مثلاً "31.2"
+                    L.marker([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], { icon: airportIcon })
+                        .addTo(map)
+                        .bindPopup(`<b> </b><br>    data base مطار القاهره من ال   <br> 📍 الإحداثيات: (${latConvertDiplayStructure}, ${lngConvertDiplayStructure})`);
+                    map.setView([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], 13);
+                }
+                else {
+                    labelMode = value;
+                    var option = labelMode;
+                    if (option === "RedSea") {// حسب الاختيار
+                        if (document.getElementById('redSea').checked) {
+                            fetch('/UQRedSeaMask.json')
+                                .then(res => res.json())
+                                .then(data => {
+                                    redSeaLayer = L.geoJSON(data, {
+                                        style: {
+                                            fillColor: 'yellow',
+                                            color: 'orange',
+                                            weight: 1,
+                                            opacity: 1,
+                                            fillOpacity: 0.5
+                                        }
+                                    }).addTo(map);
+                                    map.fitBounds(redSeaLayer.getBounds());
+                                });
+                        }
+                        else {
+                            if (redSeaLayer) {
+                                map.removeLayer(redSeaLayer);
+                                redSeaLayer = null;
+                            }
+                        }
+                    }
+
+                    if (option === "ElNile") {
+                        if (document.getElementById('elNile').checked) {
+                            fetch('/UQElNile.json')
+                                .then(res => res.json())
+                                .then(data => {
+                                    nileLayer = L.geoJSON(data, {
+                                        style: {
+                                            fillColor: 'blue',
+                                            color: 'blue',
+                                            weight: 1,
+                                            opacity: 1,
+                                            fillOpacity: 0.5
+                                        }
+                                    }).addTo(map);
+                                    map.fitBounds(nileLayer.getBounds());
+                                });
+                        }
+                        else {
+                            if (nileLayer) {
+                                map.removeLayer(nileLayer);
+                                nileLayer = null;
+                            }
+                        }
+                    }
+                    if (option === "MedSea") {
+                        if (document.getElementById('mediterranean').checked) {
+                            fetch('/UQMedSea.json')
+                                .then(res => res.json())
+                                .then(data => {
+                                    medSeaLayer = L.geoJSON(data, {
+                                        style: {
+                                            fillColor: 'purple',
+                                            color: 'darkblue',
+                                            weight: 1,
+                                            opacity: 1,
+                                            fillOpacity: 0.5
+                                        }
+                                    }).addTo(map);
+                                    map.fitBounds(medSeaLayer.getBounds());
+                                });
+                        }
+                        else {
+                            if (medSeaLayer) {
+                                map.removeLayer(medSeaLayer);
+                                medSeaLayer = null;
+                            }
+                        }
+                    }
+                }
+            }
+            function updatemapFeaturesPopup(labelMode) {
+                // if (!marker) return;
+                labelMode = labelMode;
+                const popupContent = createmapfeaturePopupContent(labelMode);
+            }
+            function updatemapFeaturesCustomized(value) {
+
+                updatemapFeaturesPopup(value); // بعد كل تعديل حدث البوب اب
+            }
+            function openCustomizedmapFeaturesDropdown() {
+                const customizedDiv = document.getElementById('customizedmapFeaturesOptions');
+                const isVisible = customizedDiv.style.display === 'block';
+
+                if (isVisible) {
+                    // لو مفتوحة، اقفلها
+                    customizedDiv.style.display = 'none';
+                } else {
+                    // لو مقفولة، افتحها
+                    customizedDiv.style.display = 'block';
+                }
+
+                // تحديث النص ليعكس حالة "Customized"
+                labelMode = "Customized";
+                document.getElementById("mapFeatureslabelToggle").innerText = `Map: Features`;
+            }
+            function openCustomizedOtherTmaDropdown() {
+                const customizedDiv = document.getElementById('customizedOtherTmaOptions');
+                const isVisible = customizedDiv.style.display === 'block';
+                if (isVisible) {
+                    // لو مفتوحة، اقفلها
+                    customizedDiv.style.display = 'none';
+                } else {
+                    // لو مقفولة، افتحها
+                    customizedDiv.style.display = 'block';
+                }
+
+                labelMode = "Customized";
+                document.getElementById("OtherTmalabelToggle").innerText = `Map: Features`;
+            }
+            function updateOtherTmaCustomized(value) {
+                updatemapFeaturesPopup(value); // بعد كل تعديل حدث البوب اب
+            }
+            function updatemapFeaturesPopup(labelMode) {
+                labelMode = labelMode;
+                const popupContent = createmapfeaturePopupContent(labelMode);
+            }
+            function createmapfeaturePopupContent(labelMode) {
+                let value = labelMode;
+                if (value === "Aswan") {
+                    const isCheckedaswan = document.getElementById('Aswan').checked;
+                    if (isCheckedaswan) {
+                        var LatitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LatitudeAswanDecimal);
+                        var LongitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LongitudeAswanDecimal);
+                        var airportIcon = L.icon({
+                            iconUrl: 'https://www.svgrepo.com/show/500079/airport.svg',
+                            iconSize: [32, 32],
+                            iconAnchor: [16, 16]
+                        });
+                        let latConvertDiplayStructure = LatitudeDecimalCairoAirport.toFixed(1); // النتيجة هتكون "30.1" كنص
+                        let lngConvertDiplayStructure = LongitudeDecimalCairoAirport.toFixed(1); // مثلاً "31.2"
+                        AswanTmaLayer = L.marker([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], { icon: airportIcon })
+                            .addTo(map)
+                            .bindPopup(`<b> </b><br>    data base مطار اسوان من ال   <br> 📍 الإحداثيات: (${latConvertDiplayStructure}, ${lngConvertDiplayStructure})`);
+                        map.setView([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], 5);
+                    }
+                    else {
+                        if (AswanTmaLayer) {
+                            map.removeLayer(AswanTmaLayer);
+                            AswanTmaLayer = null;
+                        }
+                    }
+                }
+                else if (value === "HURGHADA") {
+                    const isCheckedHURGHADA = document.getElementById('HURGHADA').checked;
+                    if (isCheckedHURGHADA) {
+                        var LatitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LatitudehurDecimal);
+                        var LongitudeDecimalCairoAirport = @JsonConvert.SerializeObject(@controllerScreenViewModel.LongitudehurDecimal);
+                        var airportIcon = L.icon({
+                            iconUrl: 'https://www.svgrepo.com/show/500079/airport.svg',
+                            iconSize: [32, 32],
+                            iconAnchor: [16, 16]
+                        });
+                        let latConvertDiplayStructure = LatitudeDecimalCairoAirport.toFixed(1); // النتيجة هتكون "30.1" كنص
+                        let lngConvertDiplayStructure = LongitudeDecimalCairoAirport.toFixed(1); // مثلاً "31.2"
+                        HURGHADATmaLayer = L.marker([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], { icon: airportIcon })
+                            .addTo(map)
+                            .bindPopup(`<b> </b><br>   data base مطار الغردقه من ال   <br> 📍 الإحداثيات: (${latConvertDiplayStructure}, ${lngConvertDiplayStructure})`);
+                        map.setView([LatitudeDecimalCairoAirport, LongitudeDecimalCairoAirport], 6);
+                    }
+                    else {
+                        if (HURGHADATmaLayer) {
+                            map.removeLayer(HURGHADATmaLayer);
+                            HURGHADATmaLayer = null;
+                        }
+                    }
+                }
+            }
+            function toggleCairoTMA() {
+                const isChecked = document.getElementById('cairoTMA').checked;
+                if (isChecked) {
+                    const lat = 30.114;
+                    const lng = 31.44;
+                    const airportIcon = L.icon({
+                        iconUrl: 'https://www.svgrepo.com/show/500079/airport.svg',
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 16]
+                    });
+                    cairoTmaLayer = L.marker([lat, lng], { icon: airportIcon })
+                        .addTo(map)
+                        .bindPopup(`<b>📍 Cairo Airport</b><br>Latitude: ${lat.toFixed(1)}, Longitude: ${lng.toFixed(1)}`);
+                    map.setView([lat, lng], 13);
+                } else {
+                    if (cairoTmaLayer) {
+                        map.removeLayer(cairoTmaLayer);
+                        cairoTmaLayer = null;
+                    }
+                }
+            }
+            function toggleCairorunwaysTMA() {
+                const isCheckedrun = document.getElementById('cairorunwaysTMA').checked;
+                if (isCheckedrun) {
+                    var runwa = @Html.Raw(JsonConvert.SerializeObject(@controllerScreenViewModel.runwaysList));
+                    if (runwa) {
+                        runwa.forEach(function (runway) {
+                            var runwayCoordinates = [
+                                [runway.RunwayStartLatitude, runway.RunwayStartLongitude],
+                                [runway.RunwayEndLatitude, runway.RunwayEndLongitude]
+                            ];
+                            let polyline = L.polyline(runwayCoordinates, { color: 'red', weight: 4 })
+                                .addTo(map)
+                                .bindPopup(`<b>مدرج ${runway.RunwayName}</b><br>  📍 البداية: (${runway.RunwayStartLatitude}, ${runway.RunwayStartLongitude})<br>  📍 النهاية: (${runway.RunwayEndLatitude}, ${runway.RunwayEndLongitude})`);
+                            cairorunTmaLayers.push(polyline);
+                        });
+                        let lastRunway = runwa[runwa.length - 1]; // Center on the last runway
+                        map.setView([lastRunway.RunwayStartLatitude, lastRunway.RunwayStartLongitude], 13);
+                    }
+                } else {
+                    cairorunTmaLayers.forEach(layer => {
+                        map.removeLayer(layer);
+                    });
+                    cairorunTmaLayers = []; // clear the array
+                }
+            }
+            // -                                   =============
+            function toggleFIR() {
+                const isChecked = document.getElementById('firToggle').checked;
+                if (isChecked) {
+                    fetch('/UQFIRMask.json')
+                        .then(res => res.json())
+                        .then(data => {
+                            firLayer = L.geoJSON(data, {
+                                filter: function (feature) {
+                                    // تأكد أننا نرسم فقط منطقة FIR الخاصة بالقاهرة
+                                    return feature.properties && (
+                                        feature.properties.name?.toUpperCase().includes('CAIRO') ||
+                                        feature.properties.id?.toUpperCase().includes('HECC')
+                                    );
+                                },
+                                style: {
+                                    color: 'red',
+                                    weight: 2,
+                                    fillOpacity: 0
+                                }
+                            }).addTo(map);
+                            map.fitBounds(firLayer.getBounds());
+                        });
+                } else {
+                    if (firLayer) {
+                        map.removeLayer(firLayer); firLayer = null;
+                    }
+                }
+            }
+            function toggleAirways() {
+                const isChecked = document.getElementById('airways').checked;
+                if (isChecked) {
+                    fetch('UQairwaysMask.geojson')
+                        .then(response => response.json())
+                        .then(data => {
+                            // إنشاء طبقة GeoJSON وإضافتها إلى الخريطة
+                            L.geoJSON(data, {
+                                style: function (feature) {
+                                    return { color: 'blue', weight: 2 };
+                                }
+                            }).addTo(map);
+                        });
+                }
+                else {
+                    if (airwaysLayer) {
+                        map.removeLayer(airwaysLayer); airwaysLayer = null;
+                    }
+                }
+            }
+            // =======-------------------------  calculate Heading Region -------------------------------------------------------------====
+            // #endregion
+            // =======------------------------- 7-Map Features Region -------------------------------------------------------------====
+            // #region 7-calculate Heading and convert To DMS  Region
+            function calculateHeading(lat1, lon1, lat2, lon2) {
+                var dLon = (lon2 - lon1) * Math.PI / 180;
+                lat1 = lat1 * Math.PI / 180; lat2 = lat2 * Math.PI / 180;
+                var y = Math.sin(dLon) * Math.cos(lat2);
+                var x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon);
+                var brng = Math.atan2(y, x) * 180 / Math.PI;
+                return (brng + 360) % 360; // لضمان القيمة من 0 إلى 360
+            }
+            // =======------------------------- 2-lat lng Region -------------------------------------------------------------====
+            function convertToDMS(degree, isLat) {
+                const dir = degree >= 0 ? (isLat ? "N" : "E") : (isLat ? "S" : "W");
+                const absDeg = Math.abs(degree); const deg = Math.floor(absDeg);
+                const minFloat = (absDeg - deg) * 60; const min = Math.floor(minFloat);
+                const sec = ((minFloat - min) * 60).toFixed(0);
+                return `${deg}°${min}'${sec}"${dir}`;
+            }
+            // #endregion
+
+
+        </script>
+    }
+</body>
+
+
+
