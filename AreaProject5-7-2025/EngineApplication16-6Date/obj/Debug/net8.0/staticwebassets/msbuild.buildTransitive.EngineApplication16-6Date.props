@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EngineApplication16-6Date.props" />
+</Project>

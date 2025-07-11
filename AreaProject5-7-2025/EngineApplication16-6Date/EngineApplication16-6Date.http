@@ -1,0 +1,6 @@
+@EngineApplication16_6Date_HostAddress = http://localhost:5251
+
+GET {{EngineApplication16_6Date_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

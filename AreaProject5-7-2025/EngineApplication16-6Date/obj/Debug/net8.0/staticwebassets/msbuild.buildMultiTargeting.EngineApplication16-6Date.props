@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EngineApplication16-6Date.props" />
+</Project>

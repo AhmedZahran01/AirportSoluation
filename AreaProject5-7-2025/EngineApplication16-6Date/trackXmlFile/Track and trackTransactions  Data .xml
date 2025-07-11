@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Airport Parameters-->
+<Tracks>
+
+
+	<Track>
+		<Name> Track Number 1 </Name>
+		<trackTransactions>
+			<trackTransaction>
+				<trackLatitude> 30.12138888888889</trackLatitude>
+				<trackLongitude>31.423888888888888</trackLongitude>
+			</trackTransaction>
+		</trackTransactions>
+	</Track>
+
+	<Track>
+		<Name> Track Number 2 </Name>
+		<trackTransactions>
+			<trackTransaction>
+				<trackLatitude> 30.12138888888889</trackLatitude>
+				<trackLongitude>31.385888888888888</trackLongitude>
+			</trackTransaction>
+		</trackTransactions>
+	</Track>
+
+	<Track>
+		<Name> Track Number 3 </Name>
+		<trackTransactions>
+			<trackTransaction>
+				<trackLatitude> 30.12138888888889</trackLatitude>
+				<trackLongitude>31.373888888888888</trackLongitude>
+			</trackTransaction>
+		</trackTransactions>
+	</Track>
+
+	<Track>
+		<Name> Track Number 4 </Name>
+		<trackTransactions>
+			<trackTransaction>
+				<trackLatitude> 30.10138888888889</trackLatitude>
+				<trackLongitude>31.403888888888888</trackLongitude>
+			</trackTransaction>
+		</trackTransactions>
+	</Track>
+
+
+</Tracks>
+
+
+
+

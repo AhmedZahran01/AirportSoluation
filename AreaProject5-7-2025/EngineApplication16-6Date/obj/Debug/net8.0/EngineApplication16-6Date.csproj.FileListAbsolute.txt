@@ -1,0 +1,312 @@
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject16-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject22-6-2025 folder\AreaProject22-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject23-6-2025 folder\AreaProject23-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject29-6-2025 folder\AreaProject29-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject30-6-2025 folder\AreaProject30-6-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject1-7-2025 folder\AreaProject1-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject2-7-2025 folder\AreaProject2-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\appsettings.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.exe
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.deps.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.runtimeconfig.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.AssemblyReference.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfoInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.AssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.csproj.CoreCompileInputs.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.EngineApplication16-6Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.build.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EngineApplication16-6Date.props
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\scopedcss\bundle\EngineApplication16-6Date.styles.css
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineAp.13B2C6A6.Up2Date
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\refint\EngineApplication16-6Date.dll
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.pdb
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\EngineApplication16-6Date.genruntimeconfig.cache
+C:\Users\Click\Desktop\Area Projects\$AreaProject5-7-2025 folder\AreaProject5-7-2025\EngineApplication16-6Date\obj\Debug\net8.0\ref\EngineApplication16-6Date.dll
